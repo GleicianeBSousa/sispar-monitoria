@@ -1,0 +1,50 @@
+
+main{
+    display: flex;
+}
+
+.conteinerNavio{
+    border: solid red;
+    width: 65%; // medida para largura é vw ou %
+    height: 100vh; //medida para altura é vh ou
+    background-image: url("../../assets/Tela\ Login/backgroundLogin.png");
+    background-repeat: no-repeat;
+}
+
+.conteinerFormulario{
+    border: solid blue;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    border: solid green;
+    width: 80%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+input{
+    width: 90%;
+    height: 4vh;
+    border-radius: 6px;
+}
+
+div{
+    border: solid blue;
+    width: 50%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+}
+
+.buttonEntrar{
+    color: ;
+}
+

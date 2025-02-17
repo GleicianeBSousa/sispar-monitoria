@@ -8,10 +8,12 @@ header{
 }
 
 mainReembolsos{
+    border: solid green;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 94vw;
     height: 95vh;
     background-color: bisque;
     

@@ -1,36 +1,31 @@
-import styles from "./Login.module.scss"
-import Logo from "../../assets/Tela Login/logo.png"
+import styles from "./Login.module.scss";
+import Logo from "../../assets/Tela Login/logo.png";
 
-function Login (){
-    return(
-        <main>
-        <section className={styles.conteinerNavio}>
-            <p>Reservado para o navio</p>
-        </section>
+function Login() {
+  return (
+    <main>
+      <section className={styles.conteinerNavio}>
+    
+      </section>
 
-        <section className={styles.conteinerFormulario}>
-            <img src={Logo} alt="Logo da Wilson Sons" />
-            <h1>Boas vindas ao Novo Portal SISPAR</h1>
-            <p>Sistema de Emissão de Boletos e Parcelamentos</p>
+      <section className={styles.conteinerFormulario}>
+        <img src={Logo} alt="Logo da Wilson Sons" />
+        <h1>Boas vindas ao Novo Portal SISPAR</h1>
+        <p>Sistema de Emissão de Boletos e Parcelamentos</p>
 
-            <form action="">
-            <input type="email" name="email"  />
-            <input type="text" />
+        <form action="">
+          <input type="text" name="email" placeholder="email" />
+          <input type="text" name="senha" placeholder="senha" />
 
-            <a href="">Esqueceu a senha</a>
+          <a href="">Esqueceu a senha</a>
 
-            <div>
-                <button className={styles.buttonEntrar}>Entrar</button>
-                <button className={styles.buttonCriar}>Criar conta</button>
-            </div>
-            </form>
-
-        </section>
-
-
-
-
-        </main>
-    )
+          <div>
+            <button className={styles.buttonEntrar}>Entrar</button>
+            <button className={styles.buttonCriar}>Criar conta</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  );
 }
 export default Login;

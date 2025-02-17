@@ -9,10 +9,14 @@ import NumeroAprovados from "../../assets/Dashboard/N-Aprovados.png"
 import NumeroRejeitados from "../../assets/Dashboard/N-Rejeitados.png"
 import NumeroSolicitados from "../../assets/Dashboard/N-Solicitados.png"
 
+
+import NavBar from "../navbar/NavBar.jsx"
+
 function Reembolsos(){
     return(
         <>
         <div>
+            <NavBar />
             <header>
                 <img src="" alt="" />
                 <img src="" alt="" />

@@ -3,13 +3,13 @@ import Home from "../../assets/Header NavBar/botão - Home.png";
 import Historico from "../../assets/Header NavBar/Botão - Histórico.png";
 import Pesquisa from "../../assets/Header NavBar/Botão - Pesquisa.png";
 import Reembolso from "../../assets/Header NavBar/Botão - Reembolso.png";
-import Perfil from "../../assets/Header NavBar/Botão - ";
+import Perfil from "../../assets/Header NavBar/image.png";
 import Sair from "../../assets/Header NavBar/Botão - Sair.png";
 import Fechar from "../../assets/Header NavBar/imagem-fechar-header.png";
 
 function NavBar() {
   return (
-    <nav className={StyleSheet.navBarEstilo}>
+    <nav className={styles.navBarEstilo}>
       <div>
         <button>
           <img src={Fechar} alt="Imagem abrir e fechar" />

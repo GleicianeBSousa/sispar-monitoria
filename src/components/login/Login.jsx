@@ -1,5 +1,6 @@
 import styles from "./Login.module.scss";
 import Logo from "../../assets/Tela Login/logo.png";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -20,8 +21,12 @@ function Login() {
           <a href="">Esqueceu a senha</a>
 
           <div>
+            <Link to="/reembolsos" >
             <button className={styles.buttonEntrar}>Entrar</button>
+            </Link>
+            <Link to="/reembolsos"> 
             <button className={styles.buttonCriar}>Criar conta</button>
+            </Link>
           </div>
         </form>
       </section>

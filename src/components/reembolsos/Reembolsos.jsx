@@ -1,6 +1,6 @@
 //import Home from ""
 //import Seta from ""
-//import styles from ""
+import Styles from "./Reembolsos.module.scss"
 import Solicitar from "../../assets/Dashboard/Solicitar - Reembolso.png"
 import Analise from "../../assets/Dashboard/Análises.png"
 import Historico from "../../assets/Dashboard/Solicitar - Histórico.png"
@@ -15,19 +15,20 @@ import NavBar from "../navbar/NavBar.jsx"
 function Reembolsos(){
     return(
         <>
-        <div>
+        <div className={Styles.conteiner}>
             <NavBar />
+            <section>
             <header>
                 <img src="" alt="" />
                 <img src="" alt="" />
                 <p>Reembolsos</p>
             </header>
 
-            <main className={styles.mainReembolsos}>
+            <main className={Styles.mainReembolsos}>
                 
                 <h1>Sistema de Reembolso</h1>
                 <p>Solicite novos pedidos de reembolso, visualize e solicite todo o histórico</p>
-                <section class={styles.conteinerCards}>
+                <section class={Styles.conteinerCards}>
                     <article>
                         <img src="" alt="" />
                         <h3>Solicitar Reembolso</h3>
@@ -42,27 +43,27 @@ function Reembolsos(){
                     </article>
                 </section>
 
-                <section class={styles.conteinerStatus}>
+                <section class={Styles.conteinerStatus}>
                     <div>
-                        <img className={styles.imgSolitados}src="" alt="" />
+                        <img className={Styles.imgSolitados}src="" alt="" />
                         <h4>182</h4>
                         <p>Solicitados</p>
                     </div>
 
                     <div>
-                        <img className={styles.imgAnalises}src="" alt="" />
+                        <img className={Styles.imgAnalises}src="" alt="" />
                         <h4>74</h4>
                         <p>Em análise</p>
                     </div>
 
                     <div>
-                        <img className={styles.imgAprovados}src="" alt="" />
+                        <img className={Styles.imgAprovados}src="" alt="" />
                         <h4>195</h4>
                         <p>Aprovados</p>
                     </div>
 
                     <div>
-                        <img className={styles.imgRejeitados}src="" alt="" />
+                        <img className={Styles.imgRejeitados}src="" alt="" />
                         <h4>41</h4>
                         <p>Rejeitados</p>
                     </div>
@@ -70,6 +71,7 @@ function Reembolsos(){
                 </section>
 
             </main>
+            </section>
         </div>
         </>
     )

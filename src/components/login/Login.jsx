@@ -5,18 +5,16 @@ import { Link } from "react-router-dom";
 function Login() {
   return (
     <main>
-      <section className={styles.conteinerNavio}>
-    
-      </section>
+      <section className={styles.conteinerImagem}></section>
 
       <section className={styles.conteinerFormulario}>
         <img src={Logo} alt="Logo da Wilson Sons" />
         <h1>Boas vindas ao Novo Portal SISPAR</h1>
         <p>Sistema de Emissão de Boletos e Parcelamentos</p>
 
-        <form action="">
-          <input type="text" name="email" placeholder="email" />
-          <input type="text" name="senha" placeholder="senha" />
+        <form class={Style.formLogin}>
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <input type="password" name="senha" id="senha" placeholder="senha" />
 
           <a href="">Esqueceu a senha</a>
 

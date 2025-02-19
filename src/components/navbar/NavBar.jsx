@@ -34,6 +34,10 @@ function NavBar() {
         <button>
           <img src={Historico} alt="Imagem histórico" />
         </button>
+        
+        <button>
+          <img src={Sair} alt="Imagem sair" />
+        </button>
       </div>
     </nav>
   );

@@ -1,9 +1,83 @@
-.conteiner{
-    width: 100vw;
-    height: 100vh;
+.headerSolicitacao{
+    border: solid red;
+    display: flex;
+    width: 20vw;
+    height: 95%;
+
+}
+
+.layoutSolicitacao{
     display: flex;
 }
 
-main{
+.mainSolicitacao{
+    width: 100%;
+
+}
+
+.formSolicitacao{
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+}
+
+//Estilização padrão para input, select ,textarea e label
+input, select, textarea{
+    border-radius: 6px;
+    border: solid #cbd4e1;
+    height: 3vh;
+}
+
+label{
+    color: #23282f;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+label{
+
+}
+
+
+//estilização do grupo 1:
+
+.grupo1{
+    border: solid;
+    width: 30%;
+    height: 25%;
+    display: flex;
+    flex-wrap: wrap; //usado para jogar a ultima imagem para a tela de baixo, caso não tenha mais tamanho na tela de cima
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.inputNome{
+    border: solid purple;
+    width: 45%;
+}
+
+.inputEmpresa{
+    border: solid blue;
+    width: 25%;
+}
+
+.inputPrestacao{
+    border: solid orange;
+    width: 25%;
+}
+
+.inputMotivo{
+    border: solid green;
+    width: 100%;
+}
+
+.barraVertical{
+    width: 0.1vw;
+    border: solid #cbd4e1;
+
+}
+
+.grupo2{
+    
 }

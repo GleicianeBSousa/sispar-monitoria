@@ -7,12 +7,12 @@ function Login() {
     <main>
       <section className={styles.conteinerImagem}></section>
 
-      <section className={styles.conteinerFormulario}>
+      <section className={stylestyles.conteinerFormulario}>
         <img src={Logo} alt="Logo da Wilson Sons" />
         <h1>Boas vindas ao Novo Portal SISPAR</h1>
         <p>Sistema de Emissão de Boletos e Parcelamentos</p>
 
-        <form class={Style.formLogin}>
+        <form class={stylestylestyle.formLogin}>
           <input type="email" name="email" id="email" placeholder="Email" />
           <input type="password" name="senha" id="senha" placeholder="senha" />
 

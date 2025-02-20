@@ -4,7 +4,7 @@ main{
 }
 
 .conteinerImagem{
-    width: 65%; // medida para largura é vw ou %
+    width: 60%; // medida para largura é vw ou %
     height: 100vh; //medida para altura é vh ou
     background-image: url("../../assets/Tela Login/backgroundLogin.png");
     background-position: center; //Altera a imagem
@@ -31,7 +31,7 @@ main{
 
 .formLogin{
     width: 70%;
-    height: 5vh;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -46,11 +46,11 @@ main{
 
 div{
     width: 50%;
-    height: 5vh;
+    //height: 5vh;
     display:flex ;
     justify-content: space-evenly;
-    align-items: center;
-    border: none;
+    //align-items: center;
+    //border: none;
 }
 
 .buttonEntrar{
@@ -61,7 +61,7 @@ div{
     align-content: center;
     //padding: 10px 10px;
     align-items: center;
-    border-radius: 3px;
+    border-radius: 6px;
     cursor: pointer;
     width: 6vw;
     height: 5vh;
@@ -79,7 +79,7 @@ div{
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 10px 10px;
+    //padding: 10px 10px;
     align-items: center;
     border-radius: 3px;
     cursor: pointer;

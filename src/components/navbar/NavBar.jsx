@@ -6,6 +6,7 @@ import Reembolso from "../../assets/Header NavBar/Botão - Reembolso.png";
 import Perfil from "../../assets/Header NavBar/image.png";
 import Sair from "../../assets/Header NavBar/Botão - Sair.png";
 import Fechar from "../../assets/Header NavBar/imagem-fechar-header.png";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -19,13 +20,17 @@ function NavBar() {
           <img src={Perfil} alt="Imagem do perfil" />
         </section>
 
-        <button onClick={()=>{navigate("/reembolsos")}}>
+        <Link to="login">
+        <button>
           <img src={Home} alt="Imagem Home" />
         </button>
+        </Link>
 
-        <button onClick={()=>{navigate}}>
+        <Link to="/reembolso">
+        <button>
           <img src={Reembolso} alt="Imagem Reembolso" />
         </button>
+        </Link>
 
         <button>
           <img src={Pesquisa} alt="Imagem Pesquisa" />

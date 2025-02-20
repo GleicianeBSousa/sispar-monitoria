@@ -1,5 +1,5 @@
-//import Home from ""
-//import Seta from ""
+import Home from "../../assets/Header/homeHeader.png";
+import Seta from "../../assets/Header/Vector.png"
 import Styles from "./Reembolsos.module.scss"
 import Solicitar from "../../assets/Dashboard/Solicitar - Reembolso.png"
 import Analise from "../../assets/Dashboard/Análises.png"

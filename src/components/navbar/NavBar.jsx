@@ -8,6 +8,7 @@ import Sair from "../../assets/Header NavBar/Botão - Sair.png";
 import Fechar from "../../assets/Header NavBar/imagem-fechar-header.png";
 import { Link } from "react-router-dom";
 
+
 function NavBar() {
   return (
     <nav className={styles.navBarEstilo}>
@@ -18,29 +19,31 @@ function NavBar() {
 
         <section>
           <img src={Perfil} alt="Imagem do perfil" />
+
+          <div className={styles.boxButton}>
+            <Link to="login">
+              <button>
+                <img src={Home} alt="Imagem Home" />
+              </button>
+            </Link>
+
+            <Link to="/reembolso">
+              <button>
+                <img src={Reembolso} alt="Imagem Reembolso" />
+              </button>
+            </Link>
+
+          <button>
+            <img src={Pesquisa} alt="Imagem Pesquisa" />
+          </button>
+
+          <button>
+            <img src={Historico} alt="Imagem histórico" />
+          </button>
+          </div>
         </section>
 
-        <Link to="login">
-        <button>
-          <img src={Home} alt="Imagem Home" />
-        </button>
-        </Link>
-
-        <Link to="/reembolso">
-        <button>
-          <img src={Reembolso} alt="Imagem Reembolso" />
-        </button>
-        </Link>
-
-        <button>
-          <img src={Pesquisa} alt="Imagem Pesquisa" />
-        </button>
-
-        <button>
-          <img src={Historico} alt="Imagem histórico" />
-        </button>
-        
-        <button>
+        <button className={styles.buttonSair}>
           <img src={Sair} alt="Imagem sair" />
         </button>
       </div>

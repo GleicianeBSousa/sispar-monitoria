@@ -21,31 +21,37 @@ function NavBar() {
           <img src={Perfil} alt="Imagem do perfil" />
 
           <div className={styles.boxButton}>
-            <Link to="login">
+            <Link to="/login">
               <button>
                 <img src={Home} alt="Imagem Home" />
               </button>
             </Link>
 
-            <Link to="/reembolso">
+            <Link to="/reembolsos">
               <button>
                 <img src={Reembolso} alt="Imagem Reembolso" />
               </button>
             </Link>
 
-          <button>
-            <img src={Pesquisa} alt="Imagem Pesquisa" />
-          </button>
+            <Link to="/solicitacao">
+              <button>
+                <img src={Pesquisa} alt="Imagem Pesquisa" />
+              </button>
+            </Link>
 
-          <button>
-            <img src={Historico} alt="Imagem histórico" />
-          </button>
+            <Link to="/solicitacao">
+              <button>
+                <img src={Historico} alt="Imagem histórico" />
+              </button>
+            </Link>
           </div>
         </section>
 
-        <button className={styles.buttonSair}>
-          <img src={Sair} alt="Imagem sair" />
-        </button>
+        <Link to="/login">
+          <button className={styles.buttonSair}>
+            <img src={Sair} alt="Imagem sair" />
+          </button>
+        </Link>
       </div>
     </nav>
   );

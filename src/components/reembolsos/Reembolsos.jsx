@@ -9,6 +9,7 @@ import NumeroAprovados from "../../assets/Dashboard/N-Aprovados.png"
 import NumeroRejeitados from "../../assets/Dashboard/N-Rejeitados.png"
 import NumeroSolicitados from "../../assets/Dashboard/N-Solicitados.png"
 import NavBar from "../navbar/NavBar.jsx"
+import { Link } from "react-router-dom";
 
 function Reembolsos(){
     return(
@@ -27,15 +28,21 @@ function Reembolsos(){
                 <p>Solicite novos pedidos de reembolso, visualize e solicite todo o histórico</p>
                 <section class={Styles.conteinerCards}>
                     <article>
-                        <img src={Solicitar} alt="Solicitar reembolso" />
+                        <Link to="/solicitacao" >
+                            <img src={Solicitar} alt="Solicitar reembolso" />
+                        </Link>
                         <h3>Solicitar Reembolso</h3>
                     </article>
                     <article>
-                        <img src={Analise} alt="Verificar análise" />
+                        <Link to="/solicitacao" >
+                            <img src={Analise} alt="Verificar análise" />
+                        </Link>
                         <h3>Verificar análise</h3>
                     </article>
                     <article>
-                        <img src={Historico} alt="Histórico" />
+                        <Link to="/solicitacao" >
+                            <img src={Historico} alt="Histórico" />
+                        </Link>
                         <h3>Histórico</h3>
                     </article>
                 </section>
